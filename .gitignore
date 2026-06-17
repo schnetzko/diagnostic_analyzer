@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# NOT exclude, because required for testing
+!tests/integration/ATE_diagnostic.log
+!tests/integration/ATE_diagnostic.log.1
+!tests/integration/ATE_diagnostic.log.2

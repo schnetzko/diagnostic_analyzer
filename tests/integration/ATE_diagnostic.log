@@ -1,0 +1,56 @@
+[2026-06-17 08:14:36.208] : any other event log
+[2026-06-17 08:14:36.222] : any other event log
+#PE[2026-06-17 08:14:36.222] : END INSERTION
+[2026-06-17 08:14:36.223] : any other event log
+[2026-06-17 08:14:36.223] : any other event log
+#PE[2026-06-17 08:14:36.224] : BEGIN DEVICE_TEST
+#PE[2026-06-17 08:14:36.224] : BEGIN DEVICE_TEST.SUBTEST "check connection"
+[2026-06-17 08:14:36.224] : any other event log
+[2026-06-17 08:14:36.225] : any other event log
+[2026-06-17 08:14:36.225] : any other event log
+[2026-06-17 08:14:36.226] : any other event log
+[2026-06-17 08:14:36.227] : any other event log
+#PE[2026-06-17 08:14:36.227] : END DEVICE_TEST
+[2026-06-17 08:14:36.228] : any other event log
+[2026-06-17 08:14:36.229] : any other event log
+#PE[2026-06-17 08:14:36.230] : BEGIN DEVICE_TEST.SUBTEST "measure leakage current"
+[2026-06-17 08:14:36.231] : any other event log
+[2026-06-17 08:14:36.231] : any other event log
+#PE[2026-06-17 08:14:36.232] : END DEVICE_TEST
+#PE[2026-06-17 08:14:36.232] : END DEVICE_TEST
+[2026-06-17 08:14:36.233] : any other event log
+[2026-06-17 08:14:36.233] : any other event log
+[2026-06-17 08:14:36.233] : any other event log
+[2026-06-17 08:14:36.234] : any other event log
+#PE[2026-06-17 08:14:36.234] : BEGIN REMOVAL
+[2026-06-17 08:14:36.234] : any other event log
+[2026-06-17 08:14:36.235] : any other event log
+#PE[2026-06-17 08:14:36.235] : END REMOVAL
+[2026-06-17 08:14:36.236] : any other event log
+[2026-06-17 08:14:36.236] : any other event log
+#PE[2026-06-17 08:14:36.236] : BEGIN INSERTION "Device #9"
+[2026-06-17 08:14:36.237] : any other event log
+[2026-06-17 08:14:36.237] : any other event log
+#PE[2026-06-17 08:14:36.237] : END INSERTION
+[2026-06-17 08:14:36.238] : any other event log
+[2026-06-17 08:14:36.238] : any other event log
+#PE[2026-06-17 08:14:36.239] : BEGIN DEVICE_TEST
+#PE[2026-06-17 08:14:36.239] : BEGIN DEVICE_TEST.SUBTEST "check connection"
+[2026-06-17 08:14:36.239] : any other event log
+[2026-06-17 08:14:36.240] : any other event log
+#PE[2026-06-17 08:14:36.240] : END DEVICE_TEST
+[2026-06-17 08:14:36.241] : any other event log
+#PE[2026-06-17 08:14:36.241] : BEGIN DEVICE_TEST.SUBTEST "measure leakage current"
+[2026-06-17 08:14:36.242] : any other event log
+[2026-06-17 08:14:36.242] : any other event log
+[2026-06-17 08:14:36.243] : any other event log
+[2026-06-17 08:14:36.243] : any other event log
+#PE[2026-06-17 08:14:36.244] : END DEVICE_TEST
+#PE[2026-06-17 08:14:36.244] : END DEVICE_TEST
+[2026-06-17 08:14:36.245] : any other event log
+[2026-06-17 08:14:36.245] : any other event log
+[2026-06-17 08:14:36.245] : any other event log
+#PE[2026-06-17 08:14:36.246] : BEGIN REMOVAL
+[2026-06-17 08:14:36.246] : any other event log
+[2026-06-17 08:14:36.246] : any other event log
+#PE[2026-06-17 08:14:36.247] : END REMOVAL
