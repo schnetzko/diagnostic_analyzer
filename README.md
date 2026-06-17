@@ -19,27 +19,34 @@ Analyze diagnostic log files of an automated test equipment system (ATE).
 
 ## Tests
 
-There will pytest based test. Currently there is only one Python module
-within tests/integration folder to generate a sample log file + 2 backup files.
+There will pytest based tests. Currently there is one Python module
+at tests/integration to generate sample log file + 2 backup files.
+The generated sample log file + backup files will be used for tests.
    ```bash
    python tests/integration/generate_diagnostic_log_file.py
    ```
 
    ```text
-   [2026-06-16 20:20:05.860] : any other event log
-   [2026-06-16 20:20:05.860] : any other event log
-   [2026-06-16 20:20:05.861] : any other event log
-   [2026-06-16 20:20:05.861] : any other event log
-   [2026-06-16 20:20:05.862] : any other event log
-   #PE[2026-06-16 20:20:05.862] : END DEVICE_TEST
-   #PE[2026-06-16 20:20:05.863] : END DEVICE_TEST
-   [2026-06-16 20:20:05.864] : any other event log
-   [2026-06-16 20:20:05.865] : any other event log
-   [2026-06-16 20:20:05.865] : any other event log
-   [2026-06-16 20:20:05.866] : any other event log
-   #PE[2026-06-16 20:20:05.866] : BEGIN REMOVAL
-   [2026-06-16 20:20:05.867] : any other event log
-   [2026-06-16 20:20:05.867] : any other event log
-   [2026-06-16 20:20:05.868] : any other event log
-   [2026-06-16 20:20:05.869] : any other event log
+   [2026-06-17 08:14:36.175] : any other event log
+   #PE[2026-06-17 08:14:36.176] : END REMOVAL
+   [2026-06-17 08:14:36.176] : any other event log
+   [2026-06-17 08:14:36.177] : any other event log
+   #PE[2026-06-17 08:14:36.177] : BEGIN INSERTION "Device #6"
+   [2026-06-17 08:14:36.178] : any other event log
+   [2026-06-17 08:14:36.179] : any other event log
+   [2026-06-17 08:14:36.179] : any other event log
+   [2026-06-17 08:14:36.179] : any other event log
+   [2026-06-17 08:14:36.180] : any other event log
+   #PE[2026-06-17 08:14:36.180] : END INSERTION
+   [2026-06-17 08:14:36.181] : any other event log
+   [2026-06-17 08:14:36.181] : any other event log
+   [2026-06-17 08:14:36.182] : any other event log
+   [2026-06-17 08:14:36.182] : any other event log
+   #PE[2026-06-17 08:14:36.183] : BEGIN DEVICE_TEST
+   #PE[2026-06-17 08:14:36.183] : BEGIN DEVICE_TEST.SUBTEST "check connection"
+   [2026-06-17 08:14:36.183] : any other event log
+   #PE[2026-06-17 08:14:36.184] : END DEVICE_TEST
+   [2026-06-17 08:14:36.184] : any other event log
+   [2026-06-17 08:14:36.184] : any other event log
+   [2026-06-17 08:14:36.185] : any other event log
    ```
