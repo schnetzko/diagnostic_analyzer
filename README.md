@@ -23,7 +23,7 @@ There will pytest based tests. Currently there is a Python module
 at tests/integration to generate sample log file and backup files.
 The generated sample log file and backup files will be used for tests.
    ```bash
-   python tests/integration/generate_diagnostic_log_file.py
+   python tests/integration/diagnostic_log_file_generator.py
    ```
 Example:
    ```text
