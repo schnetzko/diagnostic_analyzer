@@ -2,11 +2,9 @@ from logging.handlers import RotatingFileHandler
 import logging, random
 
 diagnostic_log_file="ATE_diagnostic.log"
-
-## 1. create loggers and handlers
-# general logging configuration
 date_format = "%Y-%m-%d %H:%M:%S"
 
+# 1. create logger using 2 different formats for PE (Profiling Event) and standard log entries.
 class DiagnosticFormatter(logging.Formatter):
     def __init__(self):
         self.PE_log_format = logging.Formatter("#PE[%(asctime)s.%(msecs)03d] : %(message)s", datefmt=date_format)
@@ -14,30 +12,15 @@ class DiagnosticFormatter(logging.Formatter):
         super().__init__()
 
     def format(self, record):
-        # Check for a custom attribute or log level to switch formats
+        # Check for custom attribute 'PE_format'
         if getattr(record, 'PE_format', True):
             return self.PE_log_format.format(record)
         return self.log_format.format(record)
 
-# PE = Profiling Event
-# PE_logger = logging.getLogger("PE_logger")
-# PE_logger.setLevel(logging.INFO)
-# # PE_file_handler = logging.FileHandler(diagnostic_log_file)
-# PE_file_handler = RotatingFileHandler(diagnostic_log_file, maxBytes=500, backupCount=1)
-# PE_log_format = "#PE[%(asctime)s.%(msecs)03d] : %(message)s"
-# PE_formatter = logging.Formatter(fmt=PE_log_format, datefmt=date_format)
-# PE_file_handler.setFormatter(PE_formatter)
-# PE_logger.addHandler(PE_file_handler)
-
-# logging any other events
 logger = logging.getLogger("logger")
 logger.setLevel(logging.INFO)
-# file_handler = logging.FileHandler(diagnostic_log_file)
 file_handler = RotatingFileHandler(diagnostic_log_file, maxBytes=5000, backupCount=2)
 file_handler.setFormatter(DiagnosticFormatter())
-# log_format = "[%(asctime)s.%(msecs)03d] : %(message)s"
-# formatter = logging.Formatter(fmt=log_format, datefmt=date_format)
-# file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
 # 2. define log entries
@@ -80,7 +63,7 @@ def create_diagnostic_log_file(number_of_devices):
     for i in range(number_of_devices):
         create_PE_device_log_entry(f"\"Device #{i}\"")
 
-# 3. generate diagnostic log file
+# 3. create diagnostic log file
 number_of_devices = 10
 create_diagnostic_log_file(number_of_devices)
 print("Diagnostic log file", diagnostic_log_file, "has been generated successfully.")
