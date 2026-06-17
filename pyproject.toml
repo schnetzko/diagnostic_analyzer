@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Diagnostic Analyzer"
+version = "0.1.0"
+description = "A simple diagnostic analyzer for log files"
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+license = { text = "MIT" }
+keywords = ["logging", "analyzer"]
+authors = [{ name = "Schnetzko", email = "schnetzko@schnetzko.de" }]
+dependencies = [
+]
+optional-dependencies = { dev = ["pytest>=9.0,<10.0"] }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-cov>=4.1.0",
+    "random-word",
+    "PyYaml",
+]
