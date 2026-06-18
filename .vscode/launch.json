@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+         {
+            "name": "Python: Debug CLI with File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/diagnostic_analyzer/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-f", 
+                "${workspaceFolder}/tests/integration/logs/ATE_diagnostic.log"
+            ]
+        }
+    ]
+}
