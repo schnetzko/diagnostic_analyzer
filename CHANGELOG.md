@@ -13,12 +13,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+#### CLI
+- introduced CLI as entry point
+#### Analyzer Core
+- introduced parsing function for PE entries
+
+### Dev
 #### Integration tests
 - Introduced [`diagnostic_log_file_generator.py`](tests/integration/diagnostic_log_file_generator.py) to generate diagnostic log file and backup files as a basis for implementing the analyzer. 
 - Sample diagnostic log files are added to repo and structured by use cases "healthy", "broken structure", "unusual time intervalls" and "incorrect entry" (see tests/integration). The number of non-PE (Profiling Event) log entries is generated randomly and entries contain random English words.
+#### VS Code launch config and settings
+- VS Code launch config added to debug from CLI using sample diagnostic log file
 #### Python package structure
 - Introduced basic structure to build wheel file, to execute tests and to define dependencies.
-#### CLI tool
-- introduced CLI as entry point
-#### analyzer core
-- introduced parsing function for PE entries
