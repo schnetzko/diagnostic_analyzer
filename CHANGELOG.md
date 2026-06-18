@@ -20,3 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Introduced basic structure to build wheel file, to execute tests and to define dependencies.
 #### CLI tool
 - introduced CLI as entry point
+#### analyzer core
+- introduced parsing function for PE entries

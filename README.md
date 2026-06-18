@@ -2,14 +2,18 @@
 Analyze diagnostic log files of an automated test equipment system (ATE).
 
    ```text
-   diagnostic_analyzer/src/diagnostic_analyzer$ python main.py --help
-   usage: main.py [-h] [-file_path FILE_PATH]
-   
-   CLI tool to analyze diagnostic log file of an automated test equipment system (ATE).
-
-   options:
-   -h, --help            show this help message and exit
-   -file_path FILE_PATH  path/to/diagnostic.log
+   diagnostic_analyzer/src/diagnostic_analyzer$ python main.py -file ../../tests/integration/logs/ATE_diagnostic.log
+   -------------------------------------
+   Diagnostic Analyzer - start analyzing
+   -------------------------------------
+   Filter '#PE' (Profiling Event) entries from '../../tests/integration/logs/ATE_diagnostic.log'.
+   Construct nested device tree while validating structure integrity.
+   Device: Device #8 | Validation Errors: 1
+   Device: Device #9 | Validation Errors: 1
+   ----------------------------------------
+   Diagnostic Analyzer - finished analyzing
+   ----------------------------------------
+   '../../tests/integration/logs/ATE_diagnostic.log' is NOT healthy
    ```
 ## Tech stack
 
