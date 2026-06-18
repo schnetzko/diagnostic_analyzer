@@ -1,6 +1,16 @@
 # Diagnostic Analyzer
 Analyze diagnostic log files of an automated test equipment system (ATE).
 
+   ```text
+   diagnostic_analyzer/src/diagnostic_analyzer$ python main.py --help
+   usage: main.py [-h] [-file_path FILE_PATH]
+   
+   CLI tool to analyze diagnostic log file of an automated test equipment system (ATE).
+
+   options:
+   -h, --help            show this help message and exit
+   -file_path FILE_PATH  path/to/diagnostic.log
+   ```
 ## Tech stack
 
 - Python 3.12+

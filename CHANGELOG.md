@@ -17,3 +17,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Introduced [`diagnostic_log_file_generator.py`](tests/integration/diagnostic_log_file_generator.py) to generate diagnostic log file and backup files as a basis for implementing the analyzer. Sample diagnostic log files are added to repo. The number of non-PE (Profiling Event) log entries is generated randomly, and these entries contain random English words.
 #### python package structure
 - Introduced basic structure to build wheel file, to execute tests and to define dependencies.
+#### CLI tool
+- introduce CLI as entry point to use this tool
