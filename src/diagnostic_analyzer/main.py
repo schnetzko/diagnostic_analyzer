@@ -15,11 +15,22 @@ def main():
     args = parser.parse_args()
 
     try:
-        analyze_diagnostic_log(args.file_path)
+        print ("-------------------------------------\n"
+               "Diagnostic Analyzer - start analyzing\n"
+               "-------------------------------------")
+        status = analyze_diagnostic_log(args.file_path)
+        print ("----------------------------------------\n"
+               "Diagnostic Analyzer - finished analyzing\n"
+               "----------------------------------------")
             
     except Exception as e:
         print(f"[ERROR] {e}", file=sys.stderr)
         sys.exit(1)
+
+    if status:
+        print(f"'{args.file_path}' is healthy")
+    else:
+        print(f"'{args.file_path}' is NOT healthy")
 
 if __name__ == "__main__":
     main()
