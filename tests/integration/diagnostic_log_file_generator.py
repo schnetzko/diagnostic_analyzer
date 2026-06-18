@@ -48,7 +48,7 @@ def create_PE_device_insertion_log_entry(device_id):
 def create_PE_device_subtest_log_entry(description):
     logger.info("BEGIN DEVICE_TEST.SUBTEST {description}".format(description=description), extra={'PE_format': True})
     create_any_other_log_entry()
-    logger.info("END DEVICE_TEST", extra={'PE_format': True})
+    logger.info("END DEVICE_TEST.SUBTEST", extra={'PE_format': True})
 
 def create_PE_device_test_log_entry():
     logger.info("BEGIN DEVICE_TEST", extra={'PE_format': True})
