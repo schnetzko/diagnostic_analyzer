@@ -77,10 +77,12 @@ def create_any_other_log_entry():
         logger.info(generate_random_english_words(number_of_words_per_log_entry), extra={'PE_format': False})
 
 def create_diagnostic_log_file(number_of_devices):
+    print("It's time to enjoy a coffee☕.")
+    print(f"Diagnostic log file \"{diagnostic_log_file}\" will be created now...")
     for i in range(number_of_devices):
         create_device_log_entry(f"\"Device #{i}\"")
+    print(f"Diagnostic log file \"{diagnostic_log_file}\" has been generated successfully.")
 
 # 4. create diagnostic log file
 number_of_devices = 10
 create_diagnostic_log_file(number_of_devices)
-print("Diagnostic log file", diagnostic_log_file, "has been generated successfully.")
