@@ -179,7 +179,7 @@ def analyze_diagnostic_log(diagnostic_log_file) -> bool:
     # status = parse_PE_entries_for_completeness(tree)
     # status = parse_PE_entries_for_times(tree)
 
-    diagnostic_log_is_healthy = True
+    diagnostic_log_is_healthy = False
 
     return diagnostic_log_is_healthy
 
